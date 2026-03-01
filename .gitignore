@@ -1,0 +1,68 @@
+# ═══════════════════════════════════════════════════════════
+#  QuantumVault — .gitignore
+# ═══════════════════════════════════════════════════════════
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environment
+backend/venv/
+venv/
+.venv/
+env/
+
+# ── Node.js / Frontend ───────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# ── Databases (contain user data — never commit) ─────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── ML Models (generated, can be retrained) ──────────────
+*.pkl
+*.joblib
+security_model.pkl
+
+# ── IDE & Editor ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Environment & Secrets ────────────────────────────────
+.env
+.env.local
+.env.production
+*.key
+*.pem
+
+# ── OS Generated ─────────────────────────────────────────
+.DS_Store
+ehthumbs.db
+Icon?
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Build artifacts ──────────────────────────────────────
+dist/
+build/
+*.map
