@@ -1,0 +1,23 @@
+# QuantumVault Backend Requirements
+
+# Web framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+
+# Database (SQLite built-in, SQLAlchemy for ORM)
+SQLAlchemy>=2.0.23
+
+# Cryptography
+cryptography>=41.0.0
+
+# Post-quantum cryptography (ML-KEM / Kyber)
+# Note: This may fail to install - that's okay, code has fallback
+pqcrypto>=0.1.7
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Behavioural Security Layer — anomaly detection
+scikit-learn>=1.3.0
+joblib>=1.3.0
+numpy>=1.24.0
